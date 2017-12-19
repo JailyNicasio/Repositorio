@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+
+body{
+
+	background-color:#02010a;
+	margin: 40px;
+}
+
+
+/*Esta sección pertenece a la animación de la página*/
+
+@keyframes slidein{
+from{
+  margin-top: 100%;
+   width:-60%;
+
+
+}
+
+to{
+
+  margin-top: 0%;
+  width:100%;
+}
+
+}
+
+.slidein{
+
+  -moz-animation-duration:2s;
+  -webkit-animation-duration:4s;
+  animation-duration:4s;
+  -moz-animation-name:slidein; 
+  -webkit-animation-name:slidein;
+  animation-name:slidein;
+  
+  -webkit-animation-iteration-count:4s;
+  animation-delay:2s; 
+}
+
+@media screen and (min-device-width:700px){
+.contenedor{
+	width: 100%;
+    font-family: 'Dancing Script', cursive;
+
+}
+.imagen01{
+
+	flex-direction: column;
+}
+
+.imagen02{
+
+	flex-direction: column;
+}
+
+
+
+@media screen and  (max-device-width: 900px){
+
+.main{
+
+	width: 100%;
+
+}
+
+
+article{
+	flex-direction: column;
+}
+
+
+
+header{
+
+	text-align: center;
+}
+.nav{
+
+	text-align: center;
+}
+
+footer{
+
+	flex-direction: column;
+	width: 100%;
+}
+}
+}
+/* Esta es la parte del  encabezado*/
+
+header{
+
+flex-direction: column;
+background-color: #5b7989;
+width: 100%;
+border-radius:10px;
+color:white; 
+height:80px; 
+animation-duration: 1s;
+ animation-name: slidein;
+  font-family: 'Dancing Script', cursive;
+font-size: 1em;
+
+}
+
+/* Esta  parte  pertenece a la sección de los enlaces*/
+
+
+a {
+
+	float: right;
+	padding:5px;
+	color:white;
+
+	
+}
+
+a:link, a:hover{
+
+	text-decoration: none;
+}
+
+
+ul{
+
+ list-style-type:none;	
+}
+
+.contenido{
+	width: 80%;
+	max-width: 1000px;
+	margin: 0 auto;
+display: flex;
+text-align: center;
+
+
+
+}
+
+
+
+
+/* Esta parte ubica la imágenes principal del index*/
+section{
+
+
+	background-color:#82c3a6;
+	margin-top:-20px; 
+	width: 100%;
+	height: 350px;
+	
+	
+}
+
+article{
+	margin-top: -7px;
+    display: block;
+	background-color:  #d5c75f ;
+	height: 370px;
+	width: 100%;
+	
+}
+
+article a{
+ font-size:20px;
+ float:left;
+ margin-left: 200px;	
+ 
+
+ 
+}
+
+
+
+
+.imagen01{
+
+    margin-top: 0px;
+	margin-bottom:-30px;
+  box-shadow:  2px 2px;
+}
+
+.imagen02{
+
+margin-top: 0px;
+margin-bottom: -10px;
+box-shadow: 2px 2px;
+
+}
+
+.imagen02:hover{
+animation-name: mi animacion;
+transition-duration:3s;
+transform:rotate(10deg);
+box-shadow:2px 2px #82c3a6;
+}
+
+
+.imagen03{
+margin-top: 0px;
+margin-bottom: -10px;
+box-shadow:2px 2px;
+
+}
+
+.imagen03:hover{
+transform: translate(-5Px);
+transform: translateX(20PX);
+transition-duration: 1s;
+animation-name: mi animacion;
+box-shadow:2px 2px #82c3a6;
+}
+
+
+
+/* Esta sección pertenece la página paisaje  y retrato*/
+
+section.img{
+width: 100%;
+height: 90px;
+margin-top:-20px; 
+background-color:  #d5c75f
+
+
+} 
+
+.imagen001{
+ box-shadow: 2px 2px;
+-webkit-filter:blur(10px);
+ filter: blur(10px);
+
+}
+
+.imagen002{
+
+	  box-shadow: 2px 2px;  
+  -webkit-filter:grayscale(100%);
+ filter: grayscale(100%);
+}
+
+
+
+.imagen003{
+	box-shadow: 2px 2px; 
+   -webkit-filter:sepia(90%);
+ filter: sepia(90%); 
+}
+
+.imagen004{
+	box-shadow: 2px 2px;
+  -webkit-filter:grayscale(100%);
+ filter: grayscale(100%);
+}
+
+
+.imagen005{
+	box-shadow: 2px 2px;
+}
+
+.imagen006{
+box-shadow: 2px 2px;
+  -webkit-filter:grayscale(100%);
+ filter: grayscale(100%);
+
+}
+
+/* Esta seccion pertenece al pie de pagina  o footer*/
+
+footer p{
+	margin-top:10px; 
+	text-align:-webkit-center;
+	padding-left: 50px;
+	padding-right: 50px;
+	font-size: 1.5rem;
+	font-family: 'Dancing Script', cursive;
+}
+.three-columns{
+
+	margin: 20px;
+
+}
+
+
+footer{
+	
+	
+	padding: 20px;
+    display:flex;
+	background-color:#C6d5c5;
+	border-radius:10px;
+	margin-top: 0px; 
+	box-sizing: border-box;
+	
+	
+}
